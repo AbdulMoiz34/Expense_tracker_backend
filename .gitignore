@@ -1,0 +1,40 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+jspm_packages/
+
+# build output
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# dotenv environment variable files
+.env
+.env.* 
+
+# IDE directories
+.idea/
+.vscode/
+
+# Mac System files
+.AppleDouble
+.LSOverride
+
+# Windows Installer files
+ehthumbs.db
+
+# Package-lock file if you don’t want it in version control (Optional)
+package-lock.json
+
+# Optional: Ignore bcrypt build output (if you're using bcrypt.js, not bcrypt-node)
+bcrypt_build/
+
