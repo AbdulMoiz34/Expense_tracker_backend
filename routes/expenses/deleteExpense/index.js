@@ -1,10 +1,10 @@
 import Expense from "../../../models/Expense.js";
 
 const deleteExpense = async (req, res) => {
-    const { id } = req.params;
 
+    const { id } = req.params;
     try {
-        const deleted = await Expense.findOneAndDelete({ _id: id, user: req.id });
+        const deleted = await Expense.findOneAndDelete({ _id: id, user: req.userId });
         if (!deleted) {
             return res.status(404).json({ message: "Expense not found" });
         }
