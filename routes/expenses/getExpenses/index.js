@@ -6,7 +6,7 @@ const getExpenses = async (req, res) => {
         // console.log(items);
         res.status(200).json(items);
     } catch (err) {
-        res.status(500).json({ message: "Failed to fetch expenses." });
+        res.status(500).json({ error: err, message: "Failed to fetch expenses." });
     }
 }
 
