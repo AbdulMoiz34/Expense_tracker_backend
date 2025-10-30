@@ -1,4 +1,4 @@
-import Expense from "../../../models/Expense";
+import Expense from "../../../models/Expense.js";
 
 const deleteExpense = async (req, res) => {
     const { id } = req.params;
