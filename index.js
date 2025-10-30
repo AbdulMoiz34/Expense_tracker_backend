@@ -19,4 +19,8 @@ app.use("/api", routes);
 // connect database
 connectDB();
 
+app.get("/", (req , res) => {
+    res.send(new Date().toString());
+})
+
 export default app;
