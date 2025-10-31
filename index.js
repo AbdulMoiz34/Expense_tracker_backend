@@ -23,8 +23,8 @@ app.get("/", (req, res) => {
     res.send(new Date().toString());
 })
 
-app.listen(5000, () => {
-    console.log("Server is runing");
-})
+// app.listen(5000, () => {
+//     console.log("Server is runing");
+// })
 
 export default app;
